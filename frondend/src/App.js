@@ -13,7 +13,7 @@ import ReadingList from './components/ReadingList.js'
 import ReadingList1 from './components/ReadingList1.js';
 import SocialCards from './components/SocialCards.js';
 import AlreadyRead from './components/AlreadyRead.js';
-import Ebook from './components/ebook/ebook.js';
+// import Ebook from './components/ebook/ebook.js';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/currentreading" element={<Layout><ReadingList /></Layout>}/>
         <Route path='/current-reading' element={<Layout><ReadingList1 /></Layout>} />
         <Route path='/socialcards' element={<Layout><SocialCards /></Layout>} />
-        <Route path='/ebook' element={<Layout><Ebook /></Layout>} />
+        {/* <Route path='/ebook' element={<Layout><Ebook /></Layout>} /> */}
         <Route path='/already-read' element={<Layout><AlreadyRead /></Layout>} />
         <Route path="/signin" element={<NoHeader><Signin /></NoHeader>} />
         <Route path="/signup" element={<NoHeader><Signup /></NoHeader>} />
